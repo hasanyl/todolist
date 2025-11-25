@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List - Karanlık Tema</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-2xl">
+        <div class="bg-gray-800 rounded-2xl shadow-2xl border border-gray-700 overflow-hidden">
+            <!-- Header -->
+            <div class="bg-gradient-to-r from-purple-600 to-blue-600 p-6">
+                <h1 class="text-3xl font-bold text-white text-center">Yapılacaklar Listem</h1>
+                <p class="text-purple-100 text-center mt-2 text-sm">Görevlerinizi organize edin</p>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-6 border-b border-gray-700">
+                <div class="flex gap-3">
+                    <input
+                        id = "addInput"
+                        type="text"
+                        placeholder="Yeni görev ekle..."
+                        class="flex-1 px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                    />
+                    <button id="addButton" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition flex items-center gap-2 shadow-lg">
+                        <i class="fas fa-plus"></i>
+                        Ekle
+                    </button>
+                </div>
+            </div>
+
+            <!-- Todo List -->
+            <div class="p-6 max-h-96 overflow-y-auto">
+                <div class="space-y-3">
+                    
+                </div>
+            </div>
+
+            <!-- Footer Stats -->
+            <div class="p-4 bg-gray-750 border-t border-gray-700">
+                <div id = "stats" class="flex justify-between text-sm text-gray-400">
+                    <span>Toplam: 5 görev</span>
+                    <!-- <span>Tamamlanan: 2</span>
+                    <span>Kalan: 3</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
